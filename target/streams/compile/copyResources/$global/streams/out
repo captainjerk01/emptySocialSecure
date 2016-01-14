@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/application.conf,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/routes,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/securesocial.conf~,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/securesocial.conf~)[0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/securesocial.conf,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/securesocial.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/logback.xml,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/play.plugins,/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/target/scala-2.11/classes/play.plugins)[0m

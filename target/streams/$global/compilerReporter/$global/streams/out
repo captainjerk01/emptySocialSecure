@@ -1,0 +1,7 @@
+[0m[[31merror[0m] [0m/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/app/service/MyEnvironment.scala:22: object collections is not a member of package scala[0m
+[0m[[31merror[0m] [0mimport scala.collections.immutable.ListMap[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/app/service/MyEnvironment.scala:27: not found: value ListMap[0m
+[0m[[31merror[0m] [0m  override lazy val providers = ListMap([0m
+[0m[[31merror[0m] [0m                                ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m
