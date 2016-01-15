@@ -1,14 +1,6 @@
 logs
 target
-/.idea
-/.idea_modules
-/.classpath
-/.project
-/.settings
-.cache-main
-.cache-tests
 /.sbtserver
-project/.sbtserver*
 /RUNNING_PID
 /bin/
 /conf/oauth_tokens.conf
