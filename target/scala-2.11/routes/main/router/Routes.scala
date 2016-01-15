@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/routes
-// @DATE:Fri Jan 15 12:53:42 CET 2016
+// @DATE:Fri Jan 15 15:42:59 CET 2016
 
 package router
 
@@ -19,9 +19,9 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   Application_1: javax.inject.Provider[controllers.Application],
-  // @LINE:16
+  // @LINE:24
   Assets_0: controllers.Assets,
-  // @LINE:17
+  // @LINE:25
   securesocial_Routes_0: securesocial.Routes,
   val prefix: String
 ) extends GeneratedRouter {
@@ -30,9 +30,9 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     Application_1: javax.inject.Provider[controllers.Application],
-    // @LINE:16
+    // @LINE:24
     Assets_0: controllers.Assets,
-    // @LINE:17
+    // @LINE:25
     securesocial_Routes_0: securesocial.Routes
   ) = this(errorHandler, Application_1, Assets_0, securesocial_Routes_0, "/")
 
@@ -53,9 +53,10 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """only-twitter""", """@controllers.Application@.onlyTwitter"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """link-result""", """@controllers.Application@.linkResult"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """current-user""", """@controllers.Application@.currentUser"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """callback""", """@controllers.Application@.testmethode"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loggedOutPage""", """@controllers.Application@.loggedOutPage"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """callback""", """@controllers.Application@.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
-    prefixed_securesocial_Routes_0_7.router.documentation,
+    prefixed_securesocial_Routes_0_8.router.documentation,
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -148,28 +149,45 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_Application_testmethode5_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("callback")))
+  // @LINE:14
+  private[this] lazy val controllers_Application_loggedOutPage5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("loggedOutPage")))
   )
-  private[this] lazy val controllers_Application_testmethode5_invoker = createInvoker(
-    Application_1.get.testmethode,
+  private[this] lazy val controllers_Application_loggedOutPage5_invoker = createInvoker(
+    Application_1.get.loggedOutPage,
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
-      "testmethode",
+      "loggedOutPage",
       Nil,
       "GET",
-      """""",
+      """GET         /loggedOutPage     controllers.Application.loggedOutPage()""",
+      this.prefix + """loggedOutPage"""
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_Application_index6_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("callback")))
+  )
+  private[this] lazy val controllers_Application_index6_invoker = createInvoker(
+    Application_1.get.index,
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.Application",
+      "index",
+      Nil,
+      "GET",
+      """GET        /callback            @controllers.Application.index()""",
       this.prefix + """callback"""
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_Assets_at6_route = Route("GET",
+  // @LINE:24
+  private[this] lazy val controllers_Assets_at7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at6_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
     Assets_0.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -182,8 +200,8 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] val prefixed_securesocial_Routes_0_7 = Include(securesocial_Routes_0.withPrefix(this.prefix + (if (this.prefix.endsWith("/")) "" else "/") + "auth"))
+  // @LINE:25
+  private[this] val prefixed_securesocial_Routes_0_8 = Include(securesocial_Routes_0.withPrefix(this.prefix + (if (this.prefix.endsWith("/")) "" else "/") + "auth"))
 
 
   def routes: PartialFunction[RequestHeader, Handler] = {
@@ -218,19 +236,25 @@ class Routes(
         controllers_Application_currentUser4_invoker.call(Application_1.get.currentUser)
       }
   
-    // @LINE:13
-    case controllers_Application_testmethode5_route(params) =>
+    // @LINE:14
+    case controllers_Application_loggedOutPage5_route(params) =>
       call { 
-        controllers_Application_testmethode5_invoker.call(Application_1.get.testmethode)
-      }
-  
-    // @LINE:16
-    case controllers_Assets_at6_route(params) =>
-      call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at6_invoker.call(Assets_0.at(path, file))
+        controllers_Application_loggedOutPage5_invoker.call(Application_1.get.loggedOutPage)
       }
   
     // @LINE:17
-    case prefixed_securesocial_Routes_0_7(handler) => handler
+    case controllers_Application_index6_route(params) =>
+      call { 
+        controllers_Application_index6_invoker.call(Application_1.get.index)
+      }
+  
+    // @LINE:24
+    case controllers_Assets_at7_route(params) =>
+      call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
+        controllers_Assets_at7_invoker.call(Assets_0.at(path, file))
+      }
+  
+    // @LINE:25
+    case prefixed_securesocial_Routes_0_8(handler) => handler
   }
 }

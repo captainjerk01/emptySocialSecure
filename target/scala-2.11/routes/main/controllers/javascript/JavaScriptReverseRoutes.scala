@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/routes
-// @DATE:Fri Jan 15 12:53:42 CET 2016
+// @DATE:Fri Jan 15 15:42:59 CET 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -16,7 +16,7 @@ import _root_.scala.language.reflectiveCalls
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:16
+  // @LINE:24
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -24,7 +24,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
+    // @LINE:24
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.at",
       """
@@ -64,22 +64,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
-    def testmethode: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.testmethode",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "callback"})
-        }
-      """
-    )
-  
     // @LINE:10
     def currentUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.currentUser",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "current-user"})
+        }
+      """
+    )
+  
+    // @LINE:14
+    def loggedOutPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.loggedOutPage",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loggedOutPage"})
         }
       """
     )
@@ -99,7 +99,11 @@ package controllers.javascript {
       "controllers.Application.index",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+        
+          if (true) {
+            return _wA({method:"GET", url:"""" + _prefix + """"})
+          }
+        
         }
       """
     )

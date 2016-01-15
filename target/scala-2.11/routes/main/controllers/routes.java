@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/routes
-// @DATE:Fri Jan 15 12:53:42 CET 2016
+// @DATE:Fri Jan 15 15:42:59 CET 2016
 
 package controllers;
 

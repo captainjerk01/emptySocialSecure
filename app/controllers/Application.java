@@ -30,6 +30,7 @@ import service.DemoUser;
 import views.html.index;
 import views.html.linkResult;
 import views.html.test;
+import views.html.loggedOutPage;
 
 
 /**
@@ -56,6 +57,7 @@ public class Application extends Controller {
      */
 
     @SecuredAction
+    //IMPORTZEILE FÜR JEDE ZU RENDERNDE SEITE!! import views.html.test;
     public Result index() {
         if(logger.isDebugEnabled()){
             logger.debug("access granted to index");
@@ -117,10 +119,22 @@ public class Application extends Controller {
     @SecuredAction
     public Result testmethode() {
         if(logger.isDebugEnabled()){
-            logger.debug("access granted to index");
+            logger.debug("testmethode");
         }
         DemoUser user = (DemoUser) ctx().args.get(SecureSocial.USER_KEY);
+        //return ok(test.render(user, SecureSocial.env()));
         return ok(test.render());
+    }
+
+
+    
+    public Result loggedOutPage() {
+        if(logger.isDebugEnabled()){
+            logger.debug("test2");
+        }
+        DemoUser user = (DemoUser) ctx().args.get(SecureSocial.USER_KEY);
+        //return ok(test.render(user, SecureSocial.env()));
+        return ok(loggedOutPage.render());
     }
 
 }
