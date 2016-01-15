@@ -7,7 +7,7 @@ target
 /.settings
 .cache-main
 .cache-tests
-.sbtserver
+/.sbtserver
 project/.sbtserver*
 /RUNNING_PID
 /bin/
