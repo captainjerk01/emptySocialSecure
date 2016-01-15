@@ -7,7 +7,7 @@
 		revision="master-SNAPSHOT"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20160114144904"/>
+		date="20160115122530"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

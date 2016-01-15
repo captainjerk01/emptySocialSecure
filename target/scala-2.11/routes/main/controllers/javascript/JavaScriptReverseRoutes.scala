@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/xy/PROG/STUDIUM/testing/newTesting/03_fingu/secureSocialTest/conf/routes
-// @DATE:Thu Jan 14 16:04:08 CET 2016
+// @SOURCE:/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/routes
+// @DATE:Fri Jan 15 12:25:31 CET 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }

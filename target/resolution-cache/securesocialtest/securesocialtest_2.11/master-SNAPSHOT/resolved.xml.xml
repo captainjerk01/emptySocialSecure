@@ -4,7 +4,7 @@
 		module="securesocialtest_2.11"
 		revision="master-SNAPSHOT"
 		status="integration"
-		publication="20160114144904"
+		publication="20160115122530"
 	>
 		<description>
 		secureSocialTest
