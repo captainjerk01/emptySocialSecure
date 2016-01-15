@@ -1,8 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/application.conf,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/routes,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/securesocial.conf,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/securesocial.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/ehcache.xml,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/ehcache.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/oauth_tokens.conf,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/oauth_tokens.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/logback.xml,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/conf/play.plugins,/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/target/scala-2.11/classes/play.plugins)[0m

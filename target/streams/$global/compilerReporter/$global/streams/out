@@ -1,8 +1,0 @@
-[0m[[31merror[0m] [0m/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/app/controllers/Application.java:33: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class test2[0m
-[0m[[31merror[0m] [0m  location: package views.html[0m
-[0m[[31merror[0m] [0mviews.html.test2[0m
-[0m[[31merror[0m] [0m/home/xy/PROG/STUDIUM/testing/newTesting/04_myFingu/emptysecureSocial/app/controllers/Application.java:137: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   variable loggedOutPage[0m
-[0m[[31merror[0m] [0m  location: class controllers.Application[0m
-[0m[[31merror[0m] [0mloggedOutPage[0m
