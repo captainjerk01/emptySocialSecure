@@ -13,14 +13,8 @@ GET        /current-user        @controllers.Application.currentUser
 #GET         /loggedOutPage     controllers.Application.loggedOutPage()
 GET         /loggedOutPage      @controllers.Application.loggedOutPage
 
-#GET        /callback            @controllers.Application.index()
-GET        /callback            @controllers.Application.index
-
-#GET        /callback            controllers.Application.testmethode
-#GET        /callback            controllers.Application.testmethode()
-#GET        /callback            @controllers.Application.testmethode()
+GET        /test            @controllers.Application.testmethode
 
 # Map static resources from the /public folder to the /assets URL path
 GET        /assets/*file        controllers.Assets.at(path="/public", file)
 ->         /auth                securesocial.Routes
-

@@ -56,8 +56,9 @@ public class Application extends Controller {
      * @return
      */
 
-    @SecuredAction
+
     //IMPORTZEILE FÜR JEDE ZU RENDERNDE SEITE!! import views.html.test;
+    @SecuredAction
     public Result index() {
         if(logger.isDebugEnabled()){
             logger.debug("access granted to index");
