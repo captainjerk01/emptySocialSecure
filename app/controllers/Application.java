@@ -114,7 +114,6 @@ public class Application extends Controller {
         });
     }
     
-    
     @SecuredAction
     public Result testmethode() {
         if(logger.isDebugEnabled()){
@@ -124,6 +123,4 @@ public class Application extends Controller {
         return ok(test.render());
     }
 
-    
-    
 }
